@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace BilletSystem
 {
-   public class Bil:Vehicle
+    public class Vehicle
     {
         public string Nummerplade { get; set; }
         public DateTime Dato { get; set; }
 
-        public int pris()
+        public int pris(int pris)
         {
-            return 240;
+            return pris;
+
         }
 
-        public string Køretøj()
+        public string Køretøj(string køretøj)
         {
-            return "Bil";
+            return køretøj;
         }
-
+           
     }
-    
 }
